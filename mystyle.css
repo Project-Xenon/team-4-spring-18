@@ -5,15 +5,19 @@ h1 {
      font-family:arial;
      text-align:center;
 }
+div {
+	border-radius:10px;
+	border:2px solid black;
+}
+img {
+	display:block;
+	margin:auto;
+	max-width:100%;
+}
 #bodydiv p {
 	padding:10px;
 	text-indent:50px;
 	font-size:1.2em;
-}
-div {
-	border-radius:20px;
-	border:2px solid black;
-	/*display:block;*/
 }
 #headerdiv {
      background-color:salmon;
