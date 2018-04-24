@@ -1,24 +1,24 @@
 body {
      background-color:cyan;
+     color: #000
+     font-family:arial;
 }
 h1 {
      font-family:arial;
      text-align:center;
+     color: #010101
 }
 div {
-	border-radius:10px;
-	border:2px solid black;
+	border-radius:0px;
+	border:0px solid black;
 }
-img {
-	display:block;
-	margin:auto;
-	max-width:100%;
+
+table {
+  border: 0px solid black;
+  border-collapse: collapse;
+  padding: 50px;
 }
-#bodydiv p {
-	padding:10px;
-	text-indent:50px;
-	font-size:1.2em;
-}
+
 #headerdiv {
      background-color:salmon;
 	 width:80%;
@@ -29,8 +29,123 @@ img {
 	 width:80%;
 	 margin:auto;
 }
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+
+  /* For text formatting. */
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: white;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url("temporary.jpg");
+}
+
+.bg2::after {
+  background-image: url('temporary2.jpg');
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+#content {
+  background-color: #ffffff;
+  width: 70%;
+  padding: 5%;
+  height: 190px;
+  margin: auto;
+  color: #000
+}
+
 #footerdiv {
-     background-color:#4dff52;
+   background-color:#4dff52;
 	 text-align:center;
 	 font-weight:bold;
 	 font-family:arial;
