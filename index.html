@@ -1,66 +1,99 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>About | CCSU CS Club</title>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
-<body>
-<div id="headerdiv">
-<h1>Insert Nav Bar</h1>
-</div>
-<br>
-<div class="wrapper">
-    <div class="section parallax bg1">
-      <h1>About the Club</h1>
-      <div id="content">
-        <center>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    </div>
-    <div class="section static">
-      <h1>Club E-Board</h1><p>
-        <center>
-      Hover over an officer's picture to learn more about them.</p><br>
-        <table cellpadding="50">
-        <tr><td><a href="#officer1"><img src="ninja.png" width="200px"></a></td>
-        <td><a href="#officer2"><img src="ninja.png" width="200px"></a></td></tr>
-        <tr><td><a href="#officer3"><img src="ninja.png" width="200px"></a></td>
-        <td><a href="#officer4"><img src="ninja.png" width="200px"></a></td></tr>
-</table></center>
-</div>
-    <div class="section parallax bg2">
-      <h1>CS @ CCSU</hi>
-    </div>
-    <div class="section static">
-      <h1>Contact Us</h1>
-    </div>
-  </div>
-<br>
-<div id="footerdiv">
-<p>2018 CS Club</p>
-</div>
-<div id="officer1" class="overlay">
-	<div class="popup">
-		<h2>About Officer 1</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			<b>Name</b>: Roman Bürki<br>
-      <b>Position</b>: Goalkeeper<br>
-      <b>Hobbies</b>: Soccer, Ice Hockey, Travel, Coding<br>
-      <b>Social Media</b>:<br>
-      <img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
-      <img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
+	<head>
+		<meta charset="utf-8">
+		<title>About | CCSU CS Club</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div id="headerdiv">
+			<nav class="nav navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">CCSU CS Club</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">GitHub</a></li>
+						<li><a href="#">Discussion</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Events
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Upcoming</a></li>
+								<li><a href="#">Request an Event</a></li>
+								<li><a href="#">Highlights</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="#">About</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="gliphicon glyphicon-user"></span>Sign Up</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-  </div>
-</div>
+		<br>
+		<div class="wrapper">
+    	<div class="section parallax bg1">
+      	<h1>About the Club</h1>
+      	<div id="content">
+        		<center>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        			<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        			dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        			<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint
+        			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</center>
+    			</div>
+    	</div>
+  	  <div class="section static">
+    	  <h1>Club E-Board</h1>
+      	  <center>
+      			<p>Hover over an officer's picture to learn more about them.</p><br>
+        		<table cellpadding="50">
+        			<tr>
+								<td><a href="#officer1"><img src="ninja.png" width="200px"></a></td>
+        				<td><a href="#officer2"><img src="ninja.png" width="200px"></a></td>
+							</tr>
+        			<tr>
+								<td><a href="#officer3"><img src="ninja.png" width="200px"></a></td>
+        				<td><a href="#officer4"><img src="ninja.png" width="200px"></a></td>
+							</tr>
+						</table>
+					</center>
+			</div>
+    	<div class="section parallax bg2">
+      	<h1>CS @ CCSU</h1>
+    	</div>
+    	<div class="section static">
+      	<h1>Contact Us</h1>
+    	</div>
+  	</div>
+		<br>
+		<div id="footerdiv">
+			<p>2018 CS Club</p>
+		</div>
+	<div id="officer1" class="overlay">
+		<div class="popup">
+			<h2>About Officer 1</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<b>Name</b>: Roman Bürki<br>
+      	<b>Position</b>: Goalkeeper<br>
+      	<b>Hobbies</b>: Soccer, Ice Hockey, Travel, Coding<br>
+      	<b>Social Media</b>:<br>
+      	<img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
+      	<img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
+			</div>
+  	</div>
+	</div>
   <div id="officer2" class="overlay">
   	<div class="popup">
   		<h2>About Officer 2</h2>
@@ -75,33 +108,33 @@
   		</div>
     </div>
   </div>
-    <div id="officer3" class="overlay">
-    	<div class="popup">
-    		<h2>About Officer 3</h2>
-    		<a class="close" href="#">&times;</a>
-    		<div class="content">
-    			<b>Name</b>: Aaron Ramsey<br>
-          <b>Position</b>: Midfielder<br>
-          <b>Hobbies</b>: Soccer, Golf, Reading<br>
-          <b>Social Media</b>:<br>
-          <img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
-          <img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
+  <div id="officer3" class="overlay">
+  	<div class="popup">
+  		<h2>About Officer 3</h2>
+  			<a class="close" href="#">&times;</a>
+  			<div class="content">
+  				<b>Name</b>: Aaron Ramsey<br>
+        	<b>Position</b>: Midfielder<br>
+        	<b>Hobbies</b>: Soccer, Golf, Reading<br>
+        	<b>Social Media</b>:<br>
+        	<img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
+        	<img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
     		</div>
-      </div>
-    </div>
-      <div id="officer4" class="overlay">
-      	<div class="popup">
-      		<h2>About Officer 4</h2>
-      		<a class="close" href="#">&times;</a>
-      		<div class="content">
-      			<b>Name</b>: Jérôme Boateng<br>
-            <b>Position</b>: Center Back<br>
-            <b>Hobbies</b>: Soccer, Dancing, Cyber-Security<br>
-            <b>Social Media</b>:<br>
-            <img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
-            <img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
-      		</div>
-        </div>
-      </div>
-</body>
+    	</div>
+		</div>
+  	<div id="officer4" class="overlay">
+  		<div class="popup">
+  			<h2>About Officer 4</h2>
+  			<a class="close" href="#">&times;</a>
+  			<div class="content">
+  				<b>Name</b>: Jérôme Boateng<br>
+        	<b>Position</b>: Center Back<br>
+        	<b>Hobbies</b>: Soccer, Dancing, Cyber-Security<br>
+        	<b>Social Media</b>:<br>
+        	<img src="linkedin.png" width="25px"> <img src="facebook.png" width="25px">
+        	<img src="twitter.png" width="25px"> <img src="instagram.png" width="25px">
+  			</div>
+    	</div>
+  	</div>
+	</body>
 </html>
