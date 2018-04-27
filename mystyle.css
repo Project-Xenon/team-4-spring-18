@@ -1,8 +1,3 @@
-body {
-     background-color:cyan;
-     color: #000
-     font-family:arial;
-}
 h1 {
      font-family:arial;
      text-align:center;
@@ -135,11 +130,11 @@ table {
   overflow: auto;
 }
 
-#content {
-  background-color: #ffffff;
+.content {
+  background-color:#ffffffe0;
   width: 70%;
   padding: 5%;
-  height: 190px;
+  height: auto;
   margin: auto;
   color: #000
 }
@@ -151,4 +146,7 @@ table {
 	 font-family:arial;
 	 width:80%;
 	 margin:auto;
+}
+.content p {
+	text-indent:20px;
 }
