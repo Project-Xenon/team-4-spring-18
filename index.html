@@ -100,6 +100,52 @@
     	</div>
   	</div>
 		<br>
+		<div class="content display-container">
+		  <img class="mySlides" src="cs 1.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 2.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 3.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 4.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 5.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 6.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 7.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 8.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 9.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 10 .jpg" style="width:100%">
+		  <img class="mySlides" src="cs 11.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 12.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 13.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 14 .jpg" style="width:100%">
+		  <img class="mySlides" src="cs 15.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 16.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 17.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 18 .jpg" style="width:100%">
+		  <img class="mySlides" src="cs 19.jpg" style="width:100%">
+		  <img class="mySlides" src="cs 20 .jpg" style="width:100%">
+		  <img class="mySlides" src="cs 21.jpg" style="width:100%">
+
+		  <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+		    <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+		  </div>
+
+		<script>
+
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n)
+		{showDivs(slideIndex += n);}
+
+		function showDivs(n)
+		{
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++)
+		  {x[i].style.display = "none";}
+		  x[slideIndex-1].style.display = "block";
+		}
+		</script>
 		<div id="footerdiv">
 			<p>2018 CS Club</p>
 		</div>
